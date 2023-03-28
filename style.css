@@ -7,6 +7,7 @@ body{
 .container{
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 5px;
 }
 
 header{
@@ -19,17 +20,25 @@ header{
     align-items: center;    
 }
 
-.logo{
+.menu__logo{
     width: 79px;
     height: 79px;
 }
 
-.logo img,.logo-footer img{
+.menu__logo img,.footer__logo img{
     width: 100%;
     height: 100%;
 }
 
-nav a{
+.menu__list{
+    display: flex;
+}
+
+.menu__item{
+    list-style: none;
+}
+
+.menu__link{
     color: #774E2E;
     text-decoration: none;
     font-size: 16px;
@@ -38,23 +47,26 @@ nav a{
     margin-left: 50px;
 }
 
-.welcome{
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    background-image: url(images/main-bg.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 575px 596px;
+.menu__link:hover {
+    color: #F37F34;
 }
 
-.welcome-text{
-    max-width: 575px;
+.welcome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 150px;
     padding: 60px 0;
 }
 
-h1{
+.welcome___img-block {
+    background-image: url(images/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.welcome__title{
     margin-top: 0;
     font-weight: 800;
     font-size: 110px;
@@ -62,11 +74,11 @@ h1{
     margin-bottom: 40px;
 }
 
-.title{
+.orange-text{
     color: #F37F34;
 }
 
-p{
+.welcome__text{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -74,22 +86,27 @@ p{
     margin: 0;
 }
 
-.welcome-text a{
+.welcome__link{
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
-    /* letter-spacing: 0.02px; */
     background: #774E2E;
     display: block;
     padding: 22px 0;
     margin-top: 50px;
     width: 343px;
     text-align: center;
+    transition: all 1s;
 }
 
-/* вариант 2, с кнопкой */
+.welcome__link:hover {
+    color: #774E2E;
+    background: #f38034cb;
+}
+
+/* with button */
 
 /* button{
     font-family: 'Montserrat', sans-serif;
@@ -112,26 +129,32 @@ p{
     padding-bottom: 130px;
 }
 
-h2{
+.goods__title{
     font-weight: 700;
     font-size: 72px;
-    /* letter-spacing: 0.02px; */
     text-transform: uppercase;
     line-height: 79px;
     margin: 0;
 }
 
-.blocks{
+.goods__blocks{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin: 70px 0 0 0;
 }
 
 .card{
     background: white;
     width: 370px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 1px 1px 5px 1px #F37F34;
 }
 
 h3{
@@ -139,45 +162,53 @@ h3{
     font-weight: 600;
     font-size: 24px;
     line-height: 31px;
-    /* letter-spacing: 0.02px; */
 }
 
-.goods h3{
+.card__title{
     margin-top: 36px;
     margin-bottom: 15px;
 }
 
-.card img{
+.card__img{
     width: 370px;
     height: 248px;
 }
 
-.card p{
+.card__text{
     padding: 0 20px 36px;
 }
 
-.advice{
-    padding-top: 150px;
-    padding-bottom: 150px;
+.advice__body{
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.advice-text{
-    max-width: 575px;
+.advice__text-block{
     padding-top: 44px;
     padding-bottom: 43px;
 }
 
-.advice h2{
+.advice__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.advice__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 72px;
     width: 455px;
     margin-bottom: 30px;
 }
 
-.advice h3{
+.advice__subtitle{
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-ul{
+.advice__list{
     margin: 0;
     font-weight: 500;
     font-size: 16px;
@@ -186,7 +217,7 @@ ul{
     list-style-type: none;
 }
 
-li::before{
+.advice__item::before{
     content: "";
     display: inline-block;
     width: 3px;
@@ -196,30 +227,30 @@ li::before{
     background-color: #774E2E;
 }
 
-.advice-body{
+.advice__img-block {
     background-image: url(images/section-bg.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 575px 722px;
+    background-size: contain;
 }
 
 footer{
     background-color: #774E2E;
 }
 
-.footer-section{
+.footer{
     height: 179px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo-footer{
+.footer__logo{
     width: 99px;
     height: 99px;
 }
 
-.footer-text{
+.footer__text{
     color: white;
     font-weight: 500;
     font-size: 36px;

@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yummy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body> 
+
+<body>
 
     <header>
         <div class="container menu">
-            <a href="/" class="logo">
+            <a href="/" class="menu__logo">
                 <img src="images/logo.svg" alt="logo">
             </a>
             <nav>
-                <a href="#advice">Порада від Ямі</a>
-                <a href="#goods">Мої улюбленні солодощі</a>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#advice" class="menu__link">Порада від Ямі</a></li>
+                    <li class="menu__item"><a href="#goods" class="menu__link">Мої улюбленні солодощі</a></li>
+                </ul>
             </nav>
         </div>
 
         <div class="container welcome">
-            <div class="welcome-text">
-                <h1><span class="title">YUMMY </span>PUG</h1>
-                <p>Всім привіт, я Ямі і я мопс, який дуже сильно полюбляє солодощі. Сьогодні я розкажу вам, чому саме солодощі і чому вони так важливі в нашому житті.</p>
-                <p>Доречі, моє імʼя з англійської мови перекладається як “Смачний”.</p>
-                <a href="#goods">Мої улюбленні солодощі</a>
+            <div class="welcome__text-block">
+                <h1 class="welcome__title"><span class="orange-text">YUMMY </span>PUG</h1>
+                <p class="welcome__text">Всім привіт, я Ямі і я мопс, який дуже сильно полюбляє солодощі. Сьогодні я
+                    розкажу вам, чому саме
+                    солодощі і чому вони так важливі в нашому житті.</p>
+                <p class="welcome__text">Доречі, моє імʼя з англійської мови перекладається як “Смачний”.</p>
+                <a href="#goods" class="welcome__link">Мої улюбленні солодощі</a>
                 <!-- <button>Мої улюбленні солодощі</button> -->
             </div>
+            <div class="welcome___img-block"></div>
         </div>
     </header>
 
     <main>
         <section class="goods">
-            <div class="container">
-                <h2 id="goods"><span class="title">мої улюбленні</span> солодощі</h2>
-                <div class="blocks">
-                    <div class="card">
-                        <img src="images/item1.png" alt="candy">
-                        <h3>Червоний мак</h3>
-                        <p>Пралене з додаванням карамельної крихти, пасти ядер горіхів фундука та мигдалюпокрите шоколадною глазурʼю</p>
+            <div class="container" id="goods">
+                <h2 class="goods__title"><span class="orange-text">мої улюбленні</span> солодощі</h2>
+                <div class="goods__blocks">
+                    <div class="goods__item card">
+                        <img class="card__img" src="images/item1.png" alt="candy">
+                        <h3 class="card__title">Червоний мак</h3>
+                        <p class="card__text">Пралене з додаванням карамельної крихти, пасти ядер горіхів фундука та
+                            мигдалюпокрите
+                            шоколадною глазурʼю</p>
                     </div>
-                    <div class="card">
-                        <img src="images/item2.png" alt="candy">
-                        <h3>Сливки-ленивки</h3>
-                        <p>Світлі вафельні листи, поєднані молочно-вершковою начинкою та покриті глазур’ю.</p>
+                    <div class="goods__item card">
+                        <img class="card__img" src="images/item2.png" alt="candy">
+                        <h3 class="card__title">Сливки-ленивки</h3>
+                        <p class="card__text">Світлі вафельні листи, поєднані молочно-вершковою начинкою та покриті
+                            глазур’ю.</p>
                     </div>
-                    <div class="card">
-                        <img src="images/item3.png" alt="candy">
-                        <h3>Ліщина</h3>
-                        <p>Праліне з додаванням подрібненої та тертої ліщини та мигдалю, покрите шоколадною глазур’ю.</p>
+                    <div class="goods__item card">
+                        <img class="card__img" src="images/item3.png" alt="candy">
+                        <h3 class="card__title">Ліщина</h3>
+                        <p class="card__text">Праліне з додаванням подрібненої та тертої ліщини та мигдалю, покрите
+                            шоколадною глазур’ю.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="advice">
-            <div class="container advice-body">
-                <div class="advice-text" id="advice">
-                    <h2><span class="title">Порада – </span>від Yummy</h2>
-                    <p>З'ївши чергову шоколадку, ви не просто набираєте трохи додаткових калорій, але покращуєте тим самим роботу мозку, настрій і стаєте трішки добрішим. Вирішивши поласувати шоколадкою, віддавайте перевагу саме чорному шоколаду з високим вмістом какао-бобів. У цьому вигляді шоколаду менше жиру і цукру, ніж в молочному шоколаді, але зате магнію, кальцію, заліза, білка, антиоксидантів і вітамінів предостатньо.</p>
-                    <h3>Солодощі, які радить їсти Ямі:</h3>
-                    <ul>
-                        <li>Чорний шоколад</li>
-                        <li>Зефір</li>
-                        <li>Пастила</li>
-                        <li>Мармелад</li>
-                        <li>Мед</li>
-                        <li>Халва</li>
-                        <li>Цукати</li>
+            <div class="container advice__body">
+                <div class="advice__text-block" id="advice">
+                    <h2 class="advice__title"><span class="orange-text">Порада – </span>від Yummy</h2>
+                    <p class="advice__text">З'ївши чергову шоколадку, ви не просто набираєте трохи додаткових калорій,
+                        але покращуєте тим
+                        самим роботу мозку, настрій і стаєте трішки добрішим. Вирішивши поласувати шоколадкою,
+                        віддавайте перевагу саме чорному шоколаду з високим вмістом какао-бобів. У цьому вигляді
+                        шоколаду менше жиру і цукру, ніж в молочному шоколаді, але зате магнію, кальцію, заліза, білка,
+                        антиоксидантів і вітамінів предостатньо.</p>
+                    <h3 class="advice__subtitle">Солодощі, які радить їсти Ямі:</h3>
+                    <ul class="advice__list">
+                        <li class="advice__item">Чорний шоколад</li>
+                        <li class="advice__item">Зефір</li>
+                        <li class="advice__item">Пастила</li>
+                        <li class="advice__item">Мармелад</li>
+                        <li class="advice__item">Мед</li>
+                        <li class="advice__item">Халва</li>
+                        <li class="advice__item">Цукати</li>
                     </ul>
                 </div>
+                <div class="advice__img-block"></div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container footer-section">
-            <a href="/" class="logo-footer">
+        <div class="container footer">
+            <a href="/" class="footer__logo">
                 <img src="images/footer-logo.png" alt="logo">
             </a>
-            <p class="footer-text">Приєднуйся і живи зі мною у світі солодощів!</p>
-        </div> 
+            <p class="footer__text">Приєднуйся і живи зі мною у світі солодощів!</p>
+        </div>
     </footer>
 </body>
+
 </html>
